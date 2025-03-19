@@ -11,5 +11,11 @@ Example usage:
 from FORECASTS import *
 clf = FORECASTS()
 
-adata.obs['probs'] = clf.classify(adata, n_jobs = 8, logarithmized = False, verbose = False, normalized = True)
+adata.obs['probs'] = clf.classify(
+    adata,
+    n_jobs = 8,
+    logarithmized = False,
+    verbose = False,
+    normalized = True
+)
 ```
